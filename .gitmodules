@@ -1,0 +1,6 @@
+[submodule "ShopZy_Backend"]
+	path = ShopZy_Backend
+	url = https://github.com/Akash8308/ShopZy_Backend.git
+[submodule "ShopZy_Frontend"]
+	path = ShopZy_Frontend
+	url = https://github.com/Akash8308/ShopZy_Frontend.git
