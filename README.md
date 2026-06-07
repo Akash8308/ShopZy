@@ -1,45 +1,82 @@
-# 🛒 ShopZy - Full Stack E-commerce Application
+# 🛒 ShopZy - Domain-Driven Full Stack E-Commerce Platform
 
-ShopZy is a full-stack e-commerce application designed to simulate real-world online shopping workflows. The project is divided into two main parts: a backend service built with Spring Boot and a frontend application.
+ShopZy is a **full-stack e-commerce application** built using **Domain-Driven Design (DDD)** principles. It simulates real-world online shopping workflows including product browsing, cart management, order processing, and secure authentication using JWT and OAuth2 (Google & GitHub).
 
-## 🚀 Project Overview
-
-ShopZy provides core e-commerce functionalities such as product management, cart operations, and order processing. It follows a clean and scalable architecture, making it easy to extend and maintain.
-
-## 🧩 Project Structure
-
-- **shopzy-backend** → Backend service built using Java, Spring Boot, and Spring Data JPA  
-- **shopzy-frontend** → Frontend application (Angular / AngularJS)
-
-## 🔧 Backend Features
-
-- RESTful API design  
-- Product and user management  
-- Cart functionality  
-- Order processing with status tracking  
-- Layered architecture (Controller, Service, Repository)  
-- Database integration using JPA/Hibernate  
-
-## 🌐 Live Backend
-
-You can access the deployed backend here:  
-👉 https://shopzy-backend-a5ah.onrender.com
-
-## 🛠️ Tech Stack
-
-**Backend:**
-- Java
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-
-**Frontend:**
-- Angular / AngularJS
-
-## 📌 Purpose
-
-This project was built to strengthen full-stack development skills and gain hands-on experience in building scalable backend systems using Java and Spring Boot.
+The system is designed with scalability, maintainability, and clean domain separation in mind, making it suitable for production-level backend systems and future microservices migration.
 
 ---
 
-Feel free to explore the repositories and contribute!
+## 🚀 Project Overview
+
+ShopZy is a **DDD-based backend platform** that manages core e-commerce operations across multiple bounded contexts:
+
+- User Management
+- Product Catalog
+- Shopping Cart
+- Order Processing
+- Authentication & Authorization
+
+The system is designed to be **modular, extensible, and cloud-ready**.
+
+---
+
+## 🧩 Architecture & Design
+
+### 🏛️ Domain-Driven Design (DDD)
+
+The project is structured around **bounded contexts**, ensuring each business domain is independent and self-contained:
+
+- **User Domain**
+- **Catalog Domain**
+- **Cart Domain**
+- **Order Domain**
+
+Each domain contains its own:
+- Controller
+- Service
+- Repository
+- Domain Models (Aggregates, Entities)
+
+### 📦 Key Design Principles
+
+- Domain-Driven Design (DDD)
+- SOLID Principles
+- Clean Architecture principles
+- Separation of Concerns
+- Stateless authentication (JWT)
+
+---
+
+## 🔐 Security
+
+ShopZy implements **enterprise-grade authentication and authorization**:
+
+- JWT-based stateless authentication
+- OAuth2 login (Google & GitHub)
+- Spring Security filter chain
+- Role-Based Access Control (USER / ADMIN)
+- BCrypt password encryption
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- Java 21
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- Hibernate
+- PostgreSQL
+- Maven
+
+### Authentication
+- JWT (JSON Web Tokens)
+- OAuth2 (Google, GitHub)
+
+### Frontend
+- Angular / AngularJS
+
+---
+
+## 📦 Project Structure (DDD-Based)
